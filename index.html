@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bicho Bitcoin (BICHO)</title>
+<meta name="description" content="BICHO: token de prêmios do Bicho Bitcoin, jogo do bicho grátis sorteado pela blockchain do Bitcoin, no Telegram (@BichoBitcoinbot).">
+<meta property="og:title" content="Bicho Bitcoin (BICHO)">
+<meta property="og:description" content="Jogo do bicho grátis, sorteado pela blockchain do Bitcoin. Prêmios em BICHO, na rede TON.">
+<meta property="og:image" content="https://bicho-bitcoin.github.io/website/logo-512.png">
+<link rel="icon" href="logo-512.png">
+<style>
+  :root {
+    --fundo: #12101a; --cartao: #1c1928; --borda: #2e2942; --texto: #ece9f5; --suave: #a9a3bf;
+    --roxo: #9b6bff; --laranja: #f7931a; --marrom: #b5835a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .pagina { max-width: 880px; margin: 0 auto; padding: 32px 20px 48px; }
+  header { display: grid; grid-template-columns: 160px 1fr; gap: 28px; align-items: center; }
+  header img { width: 160px; height: 160px; border-radius: 28px; border: 2px solid var(--borda); }
+  h1 { margin: 0; font-size: 2.2rem; line-height: 1.2; }
+  h1 span { color: var(--laranja); }
+  .lema { margin: 6px 0 18px; color: var(--suave); font-size: 1.1rem; }
+  .botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+  .botao { display: inline-block; padding: 10px 18px; border-radius: 10px; text-decoration: none;
+           font-weight: 600; color: var(--texto); border: 1px solid var(--borda); background: var(--cartao); }
+  .botao.principal { background: var(--roxo); border-color: var(--roxo); color: #fff; }
+  .botao:hover { filter: brightness(1.15); }
+  section { margin-top: 40px; }
+  h2 { font-size: 1.35rem; margin: 0 0 14px; }
+  .grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .cartao { background: var(--cartao); border: 1px solid var(--borda); border-radius: 14px; padding: 18px; }
+  .cartao b { display: block; margin-bottom: 4px; }
+  .cartao p { margin: 0; color: var(--suave); font-size: .95rem; }
+  .numero { color: var(--laranja); font-weight: 700; font-size: 1.4rem; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 18px; margin: 0; }
+  dt { color: var(--suave); }
+  dd { margin: 0; overflow-wrap: anywhere; }
+  code { font-family: ui-monospace, Consolas, monospace; font-size: .92rem; }
+  .copiar { margin-left: 8px; padding: 2px 10px; font: inherit; font-size: .85rem; cursor: pointer;
+            border-radius: 6px; border: 1px solid var(--borda); background: var(--fundo); color: var(--texto); }
+  .exemplo { overflow-x: auto; background: var(--fundo); border: 1px solid var(--borda);
+             border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
+  .premios { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .premios span { background: var(--fundo); border: 1px solid var(--borda); border-radius: 8px; padding: 4px 10px; }
+  .premios em { color: var(--laranja); font-style: normal; font-weight: 700; }
+  a { color: var(--roxo); }
+  .en { border-left: 3px solid var(--marrom); padding-left: 16px; }
+  footer { margin-top: 48px; color: var(--suave); font-size: .9rem; border-top: 1px solid var(--borda); padding-top: 18px; }
+  @media (max-width: 640px) {
+    header { grid-template-columns: 1fr; text-align: center; }
+    header img { margin: 0 auto; width: 128px; height: 128px; }
+    .botoes { justify-content: center; }
+    .grade { grid-template-columns: 1fr; }
+    dl { grid-template-columns: 1fr; gap: 2px; }
+    dd { margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header>
+    <img src="logo-512.png" alt="Logo do Bicho Bitcoin: um coelho jedi">
+    <div>
+      <h1>Bicho Bitcoin <span>(BICHO)</span></h1>
+      <p class="lema">Jogo do bicho <b>grátis</b>, sorteado pela <b>blockchain do Bitcoin</b>. Os prêmios são pagos em BICHO, na rede TON.</p>
+      <div class="botoes">
+        <a class="botao principal" href="https://t.me/BichoBitcoinbot">🎲 Jogar no @BichoBitcoinbot</a>
+        <a class="botao" href="https://telegra.ph/Bicho-Bitcoin-como-apostar-10-10">📖 Como apostar</a>
+        <a class="botao" href="https://tonviewer.com/EQDGdrcCVQSit0RgoOTrHeCivk3pt-FFu4q-YzBzX_p3Nwf_">🔎 Token no Tonviewer</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Como funciona</h2>
+    <div class="grade">
+      <div class="cartao"><span class="numero">1</span><b>Aposte grátis</b><p>No Telegram, escolha grupo, dezena, centena, milhar, duques, ternos ou passes. Até 5 palpites por sorteio, sem pagar nada.</p></div>
+      <div class="cartao"><span class="numero">2</span><b>O Bitcoin sorteia</b><p>Cada bloco minerado do Bitcoin é um sorteio, 24 horas por dia. Ninguém controla o resultado.</p></div>
+      <div class="cartao"><span class="numero">3</span><b>Receba em BICHO</b><p>Acertou? O prêmio vai para a sua carteira do Telegram (Walt) ou outra carteira TON. Milhar na cabeça: 4.000 BICHO.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sorteio transparente</h2>
+    <p>Do hash do bloco, tiramos as letras e ficamos com os <b>últimos 20 dígitos</b>. Em blocos de 4, eles são as milhares do 1º ao 5º prêmio. Qualquer pessoa confere em <a href="https://mempool.space/pt/">mempool.space</a>.</p>
+    <p>Exemplo, <a href="https://mempool.space/pt/block/00000000000000000001c8607e15f23b286a549607192ebd54cb1e1b8f7f6f66">bloco #970832</a>:</p>
+    <div class="exemplo"><code>00000000000000000001c8607e15f23b286a549607192ebd54cb1e1b8f7f6f66</code></div>
+    <div class="premios">
+      <span>1º <em>8654</em> Gato</span><span>2º <em>9607</em> Águia</span><span>3º <em>1925</em> Carneiro</span>
+      <span>4º <em>4118</em> Cachorro</span><span>5º <em>7666</em> Macaco</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>O token BICHO</h2>
+    <div class="cartao">
+      <dl>
+        <dt>Nome</dt><dd>Bicho Bitcoin</dd>
+        <dt>Símbolo</dt><dd>BICHO</dd>
+        <dt>Rede</dt><dd>TON (jetton)</dd>
+        <dt>Contrato</dt><dd><code id="contrato">EQDGdrcCVQSit0RgoOTrHeCivk3pt-FFu4q-YzBzX_p3Nwf_</code><button class="copiar" type="button" id="copiar">copiar</button></dd>
+        <dt>Casas decimais</dt><dd>9</dd>
+        <dt>Uso</dt><dd>Prêmio dos ganhadores do <a href="https://t.me/BichoBitcoinbot">@BichoBitcoinbot</a>. Não é vendido: só é recebido como prêmio.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="en" lang="en">
+    <h2>About (English)</h2>
+    <p><b>BICHO</b> is the prize token of <b>Bicho Bitcoin</b>, a free-to-play version of Brazil's traditional "jogo do bicho" number game, run by the Telegram bot <a href="https://t.me/BichoBitcoinbot">@BichoBitcoinbot</a>. Players never pay to bet. Every mined Bitcoin block is a draw: the last 20 digits of the block hash become the five 4-digit prizes, so anyone can verify results on mempool.space. Winners receive BICHO in their TON wallet (Telegram Wallet, Tonkeeper, MyTonWallet).</p>
+    <p>Jetton master: <code>EQDGdrcCVQSit0RgoOTrHeCivk3pt-FFu4q-YzBzX_p3Nwf_</code></p>
+  </section>
+
+  <footer>
+    Resultados da LOTEP, LOTECE e loterias da Caixa: <a href="https://t.me/loteriasoficial">@loteriasoficial</a> ·
+    Bot: <a href="https://t.me/BichoBitcoinbot">@BichoBitcoinbot</a>
+  </footer>
+</div>
+<script>
+  document.getElementById("copiar").addEventListener("click", function () {
+    var botao = this;
+    navigator.clipboard.writeText(document.getElementById("contrato").textContent).then(function () {
+      botao.textContent = "copiado!";
+      setTimeout(function () { botao.textContent = "copiar"; }, 1500);
+    });
+  });
+</script>
+</body>
+</html>
