@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" data-idioma="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Bicho Bitcoin Game</title>
+<meta name="description" content="Privacy policy of the @bichogamebot Telegram bot (Bicho Bitcoin Game).">
+<link rel="icon" href="logo-512.png">
+<script>
+  (function () {
+    var salvo = null;
+    try { salvo = localStorage.getItem("idioma"); } catch (e) {}
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+    var idioma = salvo || (/^pt/i.test(nav) ? "pt" : "en");
+    document.documentElement.setAttribute("data-idioma", idioma);
+    document.documentElement.lang = idioma === "pt" ? "pt-BR" : "en";
+  })();
+</script>
+<style>
+  :root { --fundo: #12101a; --cartao: #1c1928; --borda: #2e2942; --texto: #ece9f5; --suave: #a9a3bf; --roxo: #9b6bff; }
+  html[data-idioma="en"] [data-l="pt"], html[data-idioma="pt"] [data-l="en"] { display: none !important; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .pagina { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; }
+  .idiomas { display: flex; justify-content: flex-end; gap: 6px; }
+  .idiomas button { font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; padding: 4px 12px; border-radius: 8px; border: 1px solid var(--borda); background: var(--cartao); color: var(--suave); }
+  html[data-idioma="pt"] .idiomas [data-escolha="pt"], html[data-idioma="en"] .idiomas [data-escolha="en"] { background: var(--roxo); border-color: var(--roxo); color: #fff; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 18px 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .data { color: var(--suave); margin: 0 0 18px; }
+  a { color: var(--roxo); }
+  ul { padding-left: 22px; }
+  footer { margin-top: 40px; color: var(--suave); font-size: .9rem; border-top: 1px solid var(--borda); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="pagina">
+  <div class="idiomas" role="group" aria-label="Language / Idioma">
+    <button type="button" data-escolha="pt" lang="pt-BR">PT</button>
+    <button type="button" data-escolha="en" lang="en">EN</button>
+  </div>
+
+  <div data-l="en">
+    <h1>Privacy Policy – @bichogamebot</h1>
+    <p class="data">Bicho Bitcoin Game · Last updated: October 10, 2026</p>
+    <p>This policy explains what the Telegram bot <a href="https://t.me/bichogamebot">@bichogamebot</a> ("the bot") stores and how it is used. The bot is a free game: you never pay to play, and the BICHO token it gives out has no commercial value.</p>
+
+    <h2>What we store</h2>
+    <ul>
+      <li><b>Telegram data</b> sent by Telegram with your messages: your user ID, first and last name, username and language.</li>
+      <li><b>Your plays</b>: bet type, numbers picked, the Bitcoin block of the draw, the result and any BICHO won.</li>
+      <li><b>Your TON wallet address</b>, only if you send it to receive BICHO.</li>
+      <li><b>Your chosen language</b> (Portuguese or English).</li>
+    </ul>
+    <p>We do not ask for phone number, e-mail, location, contacts or payment data, and we never ask for your wallet's secret words or private keys.</p>
+
+    <h2>How it is used</h2>
+    <ul>
+      <li>To run the game: register plays, check results against the Bitcoin block hash and tell you the outcome.</li>
+      <li>To send BICHO to the wallet address you provided.</li>
+      <li>To show the leaderboard, where players appear only with the first 2 digits of their Telegram ID (the rest is hidden).</li>
+      <li>To let the bot administrator follow activity (new plays, wins) and keep the game working.</li>
+    </ul>
+
+    <h2>What is public</h2>
+    <p>BICHO transfers happen on the TON blockchain, which is public: anyone can see the bot's wallet sending BICHO to your wallet address. Bitcoin block hashes used in the draws are also public.</p>
+
+    <h2>Sharing</h2>
+    <p>We do not sell, rent or share your data with third parties. Data is processed by Telegram (to deliver messages) and stored on our own server.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Data is kept while the game is running, so that plays, prizes and the leaderboard stay consistent. You can stop using the bot at any time by blocking it. To ask for your data to be deleted, open a request at <a href="https://github.com/Bicho-Bitcoin/website/issues">github.com/Bicho-Bitcoin/website/issues</a> mentioning your Telegram username; transfers already made on the blockchain cannot be erased.</p>
+
+    <h2>Children</h2>
+    <p>The bot is not intended for people under 18.</p>
+
+    <h2>Changes</h2>
+    <p>This policy may be updated; the date at the top shows the latest version.</p>
+  </div>
+
+  <div data-l="pt">
+    <h1>Política de Privacidade – @bichogamebot</h1>
+    <p class="data">Bicho Bitcoin Game · Última atualização: 10 de outubro de 2026</p>
+    <p>Esta política explica o que o bot do Telegram <a href="https://t.me/bichogamebot">@bichogamebot</a> ("o bot") guarda e como usa. O bot é um jogo grátis: você nunca paga para jogar, e o token BICHO que ele distribui não tem valor comercial.</p>
+
+    <h2>O que guardamos</h2>
+    <ul>
+      <li><b>Dados do Telegram</b> que chegam junto com suas mensagens: seu ID de usuário, nome, sobrenome, nome de usuário e idioma.</li>
+      <li><b>Suas jogadas</b>: tipo de jogada, números escolhidos, o bloco do Bitcoin do sorteio, o resultado e os BICHO ganhos.</li>
+      <li><b>O endereço da sua carteira TON</b>, só se você enviar para receber BICHO.</li>
+      <li><b>O idioma escolhido</b> (português ou inglês).</li>
+    </ul>
+    <p>Não pedimos telefone, e-mail, localização, contatos nem dados de pagamento, e nunca pedimos as palavras secretas ou chaves privadas da sua carteira.</p>
+
+    <h2>Para que usamos</h2>
+    <ul>
+      <li>Para o jogo funcionar: registrar jogadas, conferir o resultado pelo hash do bloco do Bitcoin e avisar você.</li>
+      <li>Para enviar BICHO para o endereço de carteira que você informou.</li>
+      <li>Para mostrar o ranking, em que os jogadores aparecem só com os 2 primeiros números do ID do Telegram (o resto fica oculto).</li>
+      <li>Para o administrador do bot acompanhar o movimento (novas jogadas, acertos) e manter o jogo funcionando.</li>
+    </ul>
+
+    <h2>O que é público</h2>
+    <p>As transferências de BICHO acontecem na blockchain TON, que é pública: qualquer pessoa pode ver a carteira do bot enviando BICHO para o endereço da sua carteira. Os hashes dos blocos do Bitcoin usados nos sorteios também são públicos.</p>
+
+    <h2>Compartilhamento</h2>
+    <p>Não vendemos, alugamos nem compartilhamos seus dados com terceiros. Os dados passam pelo Telegram (para entregar as mensagens) e ficam guardados no nosso próprio servidor.</p>
+
+    <h2>Guarda e exclusão</h2>
+    <p>Os dados ficam guardados enquanto o jogo estiver no ar, para que jogadas, prêmios e ranking continuem coerentes. Você pode parar de usar o bot a qualquer momento, bloqueando-o. Para pedir a exclusão dos seus dados, abra um pedido em <a href="https://github.com/Bicho-Bitcoin/website/issues">github.com/Bicho-Bitcoin/website/issues</a> informando seu nome de usuário do Telegram; transferências já feitas na blockchain não podem ser apagadas.</p>
+
+    <h2>Menores de idade</h2>
+    <p>O bot não é destinado a menores de 18 anos.</p>
+
+    <h2>Alterações</h2>
+    <p>Esta política pode ser atualizada; a data no topo mostra a versão mais recente.</p>
+  </div>
+
+  <footer><a href="./">Bicho Bitcoin Game</a> · <a href="https://t.me/bichogamebot">@bichogamebot</a></footer>
+</div>
+<script>
+  document.querySelectorAll(".idiomas button").forEach(function (botao) {
+    botao.addEventListener("click", function () {
+      var idioma = botao.getAttribute("data-escolha");
+      document.documentElement.setAttribute("data-idioma", idioma);
+      document.documentElement.lang = idioma === "pt" ? "pt-BR" : "en";
+      try { localStorage.setItem("idioma", idioma); } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>
